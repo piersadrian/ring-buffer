@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B734D1641DC65F4200B1D99F /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B734D1631DC65F4200B1D99F /* RingBuffer.swift */; };
+		B734D1651DC65F4200B1D99F /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B734D1631DC65F4200B1D99F /* RingBuffer.swift */; };
+		B75F914D1DC3CCBF001981E1 /* RingBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F914C1DC3CCBF001981E1 /* RingBufferTests.swift */; };
+		B75F91521DC3CCD7001981E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78ED10D1DBC15F900EE662A /* main.swift */; };
 		B78ED10E1DBC15F900EE662A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78ED10D1DBC15F900EE662A /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,11 +27,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B734D1631DC65F4200B1D99F /* RingBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		B75F914A1DC3CCBF001981E1 /* RingBufferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingBufferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75F914C1DC3CCBF001981E1 /* RingBufferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBufferTests.swift; sourceTree = "<group>"; };
+		B75F914E1DC3CCBF001981E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B78ED10A1DBC15F900EE662A /* RingBuffer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RingBuffer; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78ED10D1DBC15F900EE662A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B75F91471DC3CCBF001981E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B78ED1071DBC15F900EE662A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +53,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B75F914B1DC3CCBF001981E1 /* RingBufferTests */ = {
+			isa = PBXGroup;
+			children = (
+				B75F914C1DC3CCBF001981E1 /* RingBufferTests.swift */,
+				B75F914E1DC3CCBF001981E1 /* Info.plist */,
+			);
+			path = RingBufferTests;
+			sourceTree = "<group>";
+		};
 		B78ED1011DBC15F900EE662A = {
 			isa = PBXGroup;
 			children = (
 				B78ED10C1DBC15F900EE662A /* RingBuffer */,
+				B75F914B1DC3CCBF001981E1 /* RingBufferTests */,
 				B78ED10B1DBC15F900EE662A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				B78ED10A1DBC15F900EE662A /* RingBuffer */,
+				B75F914A1DC3CCBF001981E1 /* RingBufferTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				B78ED10D1DBC15F900EE662A /* main.swift */,
+				B734D1631DC65F4200B1D99F /* RingBuffer.swift */,
 			);
 			path = RingBuffer;
 			sourceTree = "<group>";
@@ -65,6 +92,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B75F91491DC3CCBF001981E1 /* RingBufferTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B75F91511DC3CCBF001981E1 /* Build configuration list for PBXNativeTarget "RingBufferTests" */;
+			buildPhases = (
+				B75F91461DC3CCBF001981E1 /* Sources */,
+				B75F91471DC3CCBF001981E1 /* Frameworks */,
+				B75F91481DC3CCBF001981E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RingBufferTests;
+			productName = RingBufferTests;
+			productReference = B75F914A1DC3CCBF001981E1 /* RingBufferTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B78ED1091DBC15F900EE662A /* RingBuffer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B78ED1111DBC15F900EE662A /* Build configuration list for PBXNativeTarget "RingBuffer" */;
@@ -92,6 +136,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Playfair, LLC";
 				TargetAttributes = {
+					B75F91491DC3CCBF001981E1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9EG8ZUB58J;
+						ProvisioningStyle = Automatic;
+					};
 					B78ED1091DBC15F900EE662A = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 9EG8ZUB58J;
@@ -112,22 +161,72 @@
 			projectRoot = "";
 			targets = (
 				B78ED1091DBC15F900EE662A /* RingBuffer */,
+				B75F91491DC3CCBF001981E1 /* RingBufferTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B75F91481DC3CCBF001981E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B75F91461DC3CCBF001981E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75F91521DC3CCD7001981E1 /* main.swift in Sources */,
+				B75F914D1DC3CCBF001981E1 /* RingBufferTests.swift in Sources */,
+				B734D1651DC65F4200B1D99F /* RingBuffer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B78ED1061DBC15F900EE662A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B78ED10E1DBC15F900EE662A /* main.swift in Sources */,
+				B734D1641DC65F4200B1D99F /* RingBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B75F914F1DC3CCBF001981E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9EG8ZUB58J;
+				INFOPLIST_FILE = RingBufferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.playfair.RingBufferTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B75F91501DC3CCBF001981E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9EG8ZUB58J;
+				INFOPLIST_FILE = RingBufferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.playfair.RingBufferTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		B78ED10F1DBC15F900EE662A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -237,6 +336,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B75F91511DC3CCBF001981E1 /* Build configuration list for PBXNativeTarget "RingBufferTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75F914F1DC3CCBF001981E1 /* Debug */,
+				B75F91501DC3CCBF001981E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B78ED1051DBC15F900EE662A /* Build configuration list for PBXProject "RingBuffer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -253,6 +361,7 @@
 				B78ED1131DBC15F900EE662A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RingBufferTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>B75F91491DC3CCBF001981E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B78ED1091DBC15F900EE662A</key>
 		<dict>
 			<key>primary</key>
